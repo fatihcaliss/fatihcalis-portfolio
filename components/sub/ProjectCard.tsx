@@ -11,7 +11,11 @@ interface Props {
 
 const ProjectCard = ({ src, title, description, url }: Props) => {
   return (
-    <Link href={url} className="z-40 block" target="_blank">
+    <Link
+      href={url}
+      className="z-40 block hover:-translate-y-2 transition-all"
+      target="_blank"
+    >
       <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] w-64 h-[450px]">
         <Image
           src={src}
